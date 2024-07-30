@@ -1,0 +1,432 @@
+{
+    "description": "btcv",
+    "labels": {
+        "0": "background",
+        "1": "spleen",
+        "2": "rkid",
+        "3": "lkid",
+        "4": "gall",
+        "5": "eso",
+        "6": "liver",
+        "7": "sto",
+        "8": "aorta",
+        "9": "IVC",
+        "10": "veins",
+        "11": "pancreas",
+        "12": "rad",
+        "13": "lad"
+    },
+    "numTest": 72,
+    "numTraining": 83,
+    "tensorImageSize": "3D",
+    "test": [
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0000301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0000601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0000701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0007301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0007401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0007501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0007601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0007801_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0008301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0008501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0008601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0008701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0009101_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0009401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0009501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0009701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010801_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0010901_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0011701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012101_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0012901_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0013001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0013101_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0013301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0013401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0013801_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014801_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0014901_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0015001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0015101_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0015501_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0019401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0020201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0021401_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0024301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0025001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0026201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0026601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0026701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0027601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0029201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0029301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0029601_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0029901_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0030301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0035301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0042201_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0042301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0042701_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0043001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0043301_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0044001_avg.nii.gz",
+        "/data/zhuyao/MONAI_DATA/testing-images/DET0044901_avg.nii.gz"
+    ],
+    "training": [
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0000101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0000101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0000201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0000201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0000801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0000801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001701_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001701_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0001801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0001801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002701_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002701_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0002801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0002801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0003901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0003901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004701_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004701_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0004901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0004901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005701_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005701_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0005901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0005901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0006501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0006501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0007101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0007101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0008801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0008801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0008901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0008901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0009001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0009001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0009301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0009301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0010601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0010601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0014101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0014101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0014201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0014201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0015201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0015201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0015401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0015401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0015601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0015601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0016101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0016101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0021501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0021501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0021701_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0021701_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0024401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0024401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0026901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0026901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0028301_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0028301_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0028601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0028601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0028801_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0028801_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0029001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0029001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0030901_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0030901_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0035501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0035501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0037101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0037101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0039401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0039401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0039501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0039501_avg_seg.nii.gz"
+        }
+    ],
+    "validation": [
+                {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0040001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0040001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0040101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0040101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0040201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0040201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0042001_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0042001_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0042401_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0042401_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0042501_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0042501_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0042601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0042601_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0043101_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0043101_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0043201_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0043201_avg_seg.nii.gz"
+        },
+        {
+            "image": "/data/zhuyao/MONAI_DATA/training-images/DET0044601_avg.nii.gz",
+            "label": "/data/zhuyao/MONAI_DATA/training-labels/DET0044601_avg_seg.nii.gz"
+        }
+    ]
+}
